@@ -1,0 +1,469 @@
+/* CSS BODY */
+container {
+    font-family: athiti;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('img/bg.JPG');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -10;
+}
+
+/* ข้อความใหญ๋ */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.logo {
+    width: 100%;
+    max-width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    z-index: 1;
+    /* Ensure the logo is above the overlay */
+}
+
+.content h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.content h3 {
+    color: white;
+    font-size: 0.85rem;
+    text-align: center;
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+/* navbar */
+.navbar-top {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    width: 100%;
+    height: 70px;
+    /* Height of the navbar */
+    padding: 0 20px;
+    /* Add some padding */
+    z-index: 9;
+    /* Ensure it stays above other content */
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    list-style-type: none;
+    font-size: 1rem;
+
+}
+
+
+li {
+    transition: transform 0.3s ease;
+}
+li:hover {
+    transform: translateY(-3px);
+
+}
+
+
+.nav-home {
+    color: azure;
+    text-decoration-line: none;
+}
+.nav-home:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: blue;
+    transition: width 0.3s ease;
+
+}
+.nav-home:hover:after {
+    width: 100%;
+}
+
+
+.nav-about {
+    color: azure;
+    text-decoration-line: none;
+}
+.nav-about:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: blue;
+    transition: width 0.3s ease;
+
+}
+.nav-about:hover:after {
+    width: 100%;
+}
+.cover-about {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.cover-about-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+    
+}
+.cover-about-list a {
+    color: #000000;
+    text-decoration-line: none;
+    
+}
+.cover-about-list a:hover {
+    color: rgb(150, 2, 2);
+}
+.cover-about:hover .cover-about-list {
+    display: block;
+}
+
+
+.nav-member {
+    color: azure;
+    text-decoration-line: none;
+}
+.nav-member:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: blue;
+    transition: width 0.3s ease;
+
+}
+.nav-member:hover:after {
+    width: 100%;
+}
+
+
+.cover-ac {
+    position: relative;
+    display: inline-block;
+    
+}
+.cover-ac-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+    
+}
+.cover-ac-list a {
+    color: #000000;
+    text-decoration-line: none;
+    
+}
+.cover-ac-list a:hover {
+    color: rgb(150, 2, 2);
+}
+.cover-ac:hover .cover-ac-list {
+    display: block;
+}
+
+
+.cover.mem {
+    position: relative;
+    display: inline-block;
+}
+.cover-mem-list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+}
+.cover-mem:hover .cover-mem-list {
+    display: block;
+}
+.cover-mem-list a {
+    color: #000000;
+    text-decoration-line: none;
+    
+}
+.cover-mem-list a:hover {
+    color: rgb(150, 2, 2);
+}
+
+
+
+.nav-ac {
+    color: azure;
+    text-decoration-line: none;
+}
+.nav-ac:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: blue;
+    transition: width 0.3s ease;
+
+}
+.nav-ac:hover:after {
+    width: 100%;
+}
+
+
+.nav-con {
+    color: azure;
+    text-decoration-line: none;
+}
+.nav-con:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: blue;
+    transition: width 0.3s ease;
+
+}
+.nav-con:hover:after {
+    width: 100%;
+}
+.cover.con {
+    position: relative;
+    display: inline-block;
+}
+.cover-con-list {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 160px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+}
+.cover-con:hover .cover-con-list {
+    display: block;
+}
+.cover-con-list a {
+    color: #000000;
+    text-decoration-line: none;
+    
+}
+.cover-con-list a:hover {
+    color: rgb(150, 2, 2);
+}
+
+/* อัตลักษณ์โรงเรียน */
+.text-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 200px;
+    z-index: 30;
+}
+.text-1 h4 {
+    color: #000000;
+    font-size: 3rem;
+}
+.text-1 span {
+    font-size: 30px;
+}
+
+/* สีประจำโรงเรียน*/
+.text-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/bg-2.JPG);
+    background-size: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+    
+}
+.overlay-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    height: 300px;
+    background-color: rgba(4, 9, 56, 0.534);
+    z-index: 1;
+}
+.color-school {
+    color: #fff;
+    z-index: 1;
+    font-size: 30px;
+}
+.color-block {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, #009CFF 50%, #FF0000 50%);
+    text-align: left;
+}
+
+/* ประชาสัมพันธ์ */ /*อัพเรื่อยๆ*/
+.noti {
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+.noti h1 {
+    padding: 30px;
+}
+.noti h3 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.ig img {
+    width: 200px;
+    height: auto;
+}
+.ig img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+
+
+/* ซึ้งจัด */
+.kk {
+    background-color: none;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kk p {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.paper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 60px;
+}
+.paper img {
+    width: 400px;
+    border-radius: 20px;
+}
+.paper h2 {
+    width: 450px;
+    font-size: 30px;
+    margin: 30px;
+}
+.paper span {
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    background-image: linear-gradient(rgba(175, 0, 0, 0.692), rgba(163, 0, 0, 0.788)),
+        url('img/footer.JPG');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    z-index: 50;
+}
+.logo-footer {
+    width: 100px;
+}
+.footer span {
+    color: #fff;
+    align-items: center;
+    margin-left: 20px;
+}
+.footer p {
+    font-size: 15px;
+    width: 300px;
+    text-align: right;
+    margin-left: auto;
+    color: #fff;
+    font-weight: 100;
+
+}
+.footer a {
+    color: #fff;
+}
